@@ -40,7 +40,7 @@ To build it yourself, you can scroll down for the tutorial for it.
 > but you *can* build it yourself.
 
 ### Linux
-1. Install *Any* C compiler (Default, it is pre-installed) Recommended GCC, because other *can* be **unstable**. 
+1. Install *Any* C compiler (Default, it is pre-installed)
 2. Build it:
 <code>./build.sh</code>
 > If it says "Access denied" or something like that, type <code>chmod +x build.sh</code> and try again. If it's doesn't work, report it on Github Issues.
