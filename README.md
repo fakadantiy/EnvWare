@@ -44,7 +44,10 @@ To build it yourself, you can scroll down for the tutorial for it.
 2. Build it:
 <code>./build.sh</code>
 > If it says "Access denied" or something like that, type <code>chmod +x build.sh</code> and try again. If it's doesn't work, report it on Github Issues.
-3. Launch .iso file in any emulator(Recommended QEMU)
+3. Create the disk:
+<code>./run.sh -f</code>
+4. Run it:
+<code>./run.sh</code>
 
 ### Windows (W.I.P)
 Sorry, no windows for now :(
