@@ -2,7 +2,7 @@
 	
 # EnvWare
 
-[![Version](https://img.shields.io/badge/version-0.1-purple)](#)
+[![Version](https://img.shields.io/badge/version-1.0-purple)](#)
 [![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](#)
 [![Custom License](https://img.shields.io/badge/envware-license-blue)](#)
 
@@ -31,6 +31,7 @@ To build it yourself, you can scroll down for the tutorial for it.
 - **rm** Deleting file in the directory.
 - **mkdir** Creating directory
 - **rmdir** Deleting directory
+- **cd** Entering directory
 ---
 
 ## Building and launch.
