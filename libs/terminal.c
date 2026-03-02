@@ -44,7 +44,7 @@ void terminal_run(void) {
                 printstr("\n| write <f> <text> - write         |");
                 printstr("\n| cat <file>  - read               |");
                 printstr("\n| info        - system information |");
-                printstr("\n| shutdown    - shutdown          |");
+                printstr("\n| shutdown    - shutdown           |");
                 printstr("\n+----------------------------------+");
 
             } else if (strcmp(cmd, "info") == 0) {
@@ -54,6 +54,9 @@ void terminal_run(void) {
                 __asm__ __volatile__("cli; hlt");
             } else if (strcmp(cmd, "ls") == 0) {
                 fs_ls();
+            } else if (strcmp(cmd, "echo") == 0) {
+                printstr("\n");
+                printstr(arg);
             } else if (strcmp(cmd, "mk") == 0) {
                 if (arg) fs_create(arg);
                 else printclr("\nusage: mk <filename>", 0x4);
@@ -92,7 +95,7 @@ void terminal_run(void) {
                 }
 
             } else if (cmd[0] != 0) {
-                printclr("unknown command\n", 0x4);
+                printclr("\nunknown command", 0x4);
             }
 
             len = 0;
